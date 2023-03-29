@@ -1,0 +1,464 @@
+:root{
+    --azulOscuro: #2B3467;
+    --dark-x: #1e2126;
+    --light: #ffffff;
+    --azulClarito: #BAD7E9;
+    --colorCrema: #FCFFE7;
+    --RojoCake: #EB455F;
+    --azulFb: #293462;
+    --azul1: #537FE7;
+    --AzulJelly: #2F73AE;
+
+}
+
+
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    background-color: var(--colorCrema);
+    font-family: 'Raleway', sans-serif;
+    /* background: url() no-repeat center top; */
+}
+
+.DatosCurso
+{
+border: 4px solid #293462;
+}
+
+
+nav  {
+    height: 60px;
+    color: #293462;
+}
+
+
+header{
+    position: fixed;
+    top: 0%;
+    width:100%;
+    z-index: 1000;
+
+}
+
+
+.MenusD
+{
+  
+    
+}
+
+.MenusD a
+{
+    color: white;
+    font-weight: 600;
+   
+}
+
+.MenusD a:hover
+{
+    color: var(--dark-x)
+}
+
+
+#logo
+{
+    width: 40px;
+}
+
+.perfil
+{
+    width: 40px;
+    border-radius: 50%;
+}
+
+input[type="text"] 
+{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+    justify-content: center;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--dark-x);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover
+  {
+    background-color: var(--azulClarito);
+    color: var(--dark-x);
+    font-weight: 600;
+  }
+
+
+#MyContainerPage {
+    margin: 0;
+    padding: 0;
+    
+}
+
+#titulo
+{
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.PrimerosDatos
+{
+    display: flex;
+    background-color: var(--azulClarito);
+    margin: 35px;
+    padding: 10px;
+    border-radius: 8px;
+    flex-direction: column;
+}
+
+.PrimerosDatos h4
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.ContainerVideo 
+{
+    display: inline-flex;
+    height: 400px;
+    padding: 8px;
+}
+.C-TitVid /*Contenedor del título*/
+{
+    display: flex;
+    justify-content: center;
+    background-color: var(--colorCrema);
+    border-radius: 4px;
+    
+}
+
+.ContainerVideo video
+{
+    display: flex;
+    justify-content: center;
+    width:70%;
+}
+
+
+.C-NombreCurso
+{
+    display: block;
+    justify-content: center;
+
+}
+
+
+
+.ContainerVideo .ContainerComprar
+{
+    display: flex;
+    /* margin-top:5%;
+    margin-bottom: 5%; */
+    flex-direction: column;
+    width: 30%;
+    padding: 10px;
+}
+
+.ContainerComprar .Carrito 
+{
+    display: flex;
+    width: 20%;
+}
+
+.Txt-UnderPrice /*El contenedor del txt debajo del boton COMPRAR*/
+{
+    background-color: var(--RojoCake);
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+.ContainerComprar  .Txt-UnderPrice p
+{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+
+}
+
+
+
+
+.ContainerComprar input
+{
+    display: flex;
+    justify-content: center;
+    background-color: var(--azulOscuro);
+	width: 100%;
+	color: white;
+	padding: 14px 20px;
+	margin: 30px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+    background-image: url("Carrito/Carrito-Ico.png");
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.ContainerComprar h5
+{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.ContainerComprar input:hover
+{
+    background-color: var(--RojoCake);
+    color: var(--RojoCake);
+   font-weight: 700;
+   padding: 18px 24px;
+}
+
+.C-DescriptionVid
+{
+    display: inline-block;
+    width: 60%;
+    background-color: var(--azulClarito);
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    width: 70%;
+}
+
+ #califCurso
+{
+    display: flexbox;
+     margin: 0 30px;
+     margin-top: 20px;
+   
+}
+
+
+.C-TerceraParte #califCurso p
+{
+   font-size: 23px;
+   font-weight: 600;
+}
+
+#califCurso .C-Estrellitas
+{
+   width: 15%;
+}
+
+
+/*******************COMENTARIO**********************/
+#commentary {
+    margin-left: 5%;
+    margin-right: 10%;
+    width: 90%;
+    font-size: 80%;
+    background-color: var(--azulClarito);
+    
+}
+
+.ContainerComentario
+{
+    display:inline-box;
+    margin: 45px;
+}
+
+.form-group .comentario{
+    color: var(--azulOscuro);
+    margin-left: 5%;
+  
+}
+
+.form-group textarea
+{
+    height: 80px;
+
+}
+
+.form-group textarea:hover
+{
+ 
+    background-color: rgb(229, 229, 229) !important;
+    cursor: not-allowed;
+}
+
+
+
+
+.form-group  { /*Son dos elementos del area COMENTARIO*/
+    display:flexbox;
+    margin-right: 5%;
+}
+
+.form-group #btnComentario
+{
+    display: flex;
+    margin: 20px;
+    justify-content: end;
+}
+
+.ContainerComentario input {
+ 
+    border-radius: 3px;
+    background-color: var(--azulFb);
+    color: var(--colorCrema);
+    padding: 5px;
+   
+}
+
+.ContainerComentario input:hover
+{
+    background-color: var(--RojoCake);
+    color: var(--azulFb);
+    font-weight: 600;
+    cursor: pointer;
+    cursor: not-allowed;
+    background-color: rgb(229, 229, 229) !important;
+}
+
+
+/**********************FOOTER********************/
+
+
+.pie-pag
+{
+    width: 100%;
+    height: auto;
+    background-color: var(--dark-x) ;
+    color: var(--colorCrema);
+}
+
+.pie-pag .grupo-1
+{
+    display: flex;
+   align-items: center;
+}
+
+.pie-pag .grupo-1 .box /*El contenido de los box*/
+{   display: flex;
+    align-items:center;
+    flex-direction: column;
+    width: 80%;
+}
+
+
+.pie-pag .grupo-1 .box figure
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pag .grupo-1 .box figure
+{
+    display: flex;
+    width: 40%;
+    height: 60%;
+    padding: 45px;
+}
+
+
+.pie-pag .grupo-1 .box figure img /*La imagen del footer*/
+{
+    width: 125px;
+
+}
+
+.pie-pag .grupo-1 .box h2 /*Las letras del footer*/
+{
+    margin-bottom: 25px ;
+    font-size: 20px;
+    color: var(--RojoCake);
+
+}
+
+
+
+/* .pie-pag .grupo-1
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flexbox;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0;
+} */
+
+
+
+
+.pie-pag .grupo-1 .box p /*Texto de SOBRE NOSOTRES*/
+{
+    color: var(--colorCrema);
+    font-weight:500;
+} 
+
+/*Los íconos de redes sociales*/
+
+.pie-pag .grupo-1 .red-social a
+{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: var(--RojoCake);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #2B3467;
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 8px;
+}
+
+.pie-pag .grupo-1 .red-social a:hover 
+{
+    color: var(--azulOscuro);
+    background-color: var(--azulClarito);
+}
+
+.pie-pag .grupo-2
+{
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.pie-pag .grupo-2 small
+{
+  font-size:  15px;
+}
+
+
+/* @media screen and(max-width:800px) {
+  .pie-pag .grupo-1 
+  {
+    width: 90%;
+    display: inline-flex;
+    flex-wrap: wrap;
+   justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+} */
+

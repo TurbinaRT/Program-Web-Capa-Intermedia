@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shorcut icon" href="icon/HMv2.png">
+	<title>Formulario</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Humon-Registro.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <script src="validar.js"></script>
+	
+</head>
+<body>
+
+	<div class="Formulario">
+        <form method="post" enctype="multipart/form-data" onsubmit="return validar();">
+    
+                <div class="Primero">
+                    <h1>Regístrate</h1>
+                    <img src="Pulpo/Opc1-SinBorde.png" class="Pulpo" height="95px" width="70px" alt="Pulpo Humon" >
+                </div>
+            
+            <h4>Únete y aprende</h4>
+            
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre-h" name="nombre" placeholder="Ingresa tu nombre" required>
+    
+            <label for="apellidos" id="txt-Ap">Apellidos:</label>
+            
+            <div class="LN-H">
+                
+                <input type="text" id="Ap-pat-h" name="apellidoP" placeholder="Paterno" required>
+        
+                <input type="text" id="Ap-mat-h" name="apellidoM" placeholder="Materno (opcional)" required>
+
+            </div>
+
+            <div class="ContainerN-N">
+                
+                <label for="nombre">Nombre de usuario:</label>
+                <input type="text" id="Inserta tu nombre de usuario" name="username" placeholder="Username" required>
+        
+
+            </div>
+
+            <label for="foto">Fecha de Nacimiento</label>
+            <input type="date" id="foto-h" name="foto" accept="image/*" required>
+    
+    
+            <label for="genero">Género:</label>
+            
+            <select id="genero-h" name="genero" required>
+                <option value="">Selecciona una opción</option>
+                <option value="femenino">Femenino</option>
+                <option value="masculino">Masculino</option>
+                <option value="otro">Otro</option>
+            </select>
+    
+           
+
+            <label for="foto">Imagen de perfil</label>
+            <input type="file" id="foto-h" name="foto" accept="image/*" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email-h" name="email" placeholder="Ingresa tu email" required>
+    
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="password-h" name="contraseña" placeholder="Ingresa tu contraseña" required>
+    
+
+            <div class="radio">
+                <input type="radio" name="rol" id="Alumno">
+
+                <div class="txtRadio">
+                    <label for="Alumno" >Alumno</label>
+                </div>
+
+
+                
+                <input type="radio" name="rol" id="Instructor">
+
+                <div class="txtRadio"> 
+                    <label for="Instructor" class="labelRadio">Instructor</label>
+                </div>
+                
+            </div>
+
+
+            <div class="container-button">
+                <button type="submit" class="Btn-Create">Crear cuenta</button>
+            </div>
+            
+
+            <div class="YaTengoCuenta">
+
+                        <p>¿Ya tienes una cuenta? </p>
+                        <a href="">Entrar</a>
+            </div>
+
+        </form>
+
+        <footer class="pie-pag">
+            
+            <div class="grupo-2">
+                <small>&copy; 2023 <b>Humon</b> - Todos los derechos reservados -</small>
+    
+            </div>
+    
+        </footer>
+
+
+
+
+    </div>
+
+</body>
+</html>

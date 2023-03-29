@@ -1,0 +1,40 @@
+.kardex{
+    margin: auto;
+    padding: 0px;
+    width: 75%;
+    background-color: #fcffe7d6;
+    text-align: center;
+    display: flexbox;
+    justify-content: center;
+    border-style: ridge;
+    border-color: #2B3467;
+}
+
+.kardex > h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 15px;
+    margin-top: 15px;
+    color: black;
+}
+
+.container{
+    margin: 5%;
+}
+.container > .dropdown{
+    margin-bottom: 10px;
+}
+
+.container > .hoja{
+    background-color: #bad7e9eb;
+    font-size: 20px;
+    border-style: dashed;
+    border-color: #2B3467;
+}
+
+.container > .hoja > label{
+    margin-left: 10px;
+}
+
+.linea {
+    border: 2px solid rgba(38, 38, 38, 0.784);
+  }

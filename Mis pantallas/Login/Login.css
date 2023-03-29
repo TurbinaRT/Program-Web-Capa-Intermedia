@@ -1,0 +1,203 @@
+:root{
+    --azulOscuro: #2B3467;
+    --dark-x: #1e2126;
+    --light: #ffffff;
+    --azulClarito: #BAD7E9;
+    --colorCrema: #FCFFE7;
+    --RojoCake: #EB455F;
+    --azulFb: #293462;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bg-dark
+{
+    background-color: var(--azulOscuro) !important;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 200;
+    color: var(--light);
+}
+
+
+.Tipea-Datos
+{
+    background-color: var(--azulClarito);
+    border: 0;
+    
+}
+
+.datosCuenta
+{
+    offset-block-start:initial;
+   
+}
+
+.form-control
+{
+    min-height: 3.125rem;
+    line-height:initial;
+
+}
+
+.ForgotPass, .BienvenidoHM
+{
+    color: var(--colorCrema);
+    text-decoration: none;
+
+}
+
+.ForgotPass:hover{
+    color: var(--RojoCake);
+    
+}
+
+.btnInicio{
+    color:var(--colorCrema);
+    background-color: var(--RojoCake);
+ border: 0;
+ 
+}
+
+.btnInicio:hover
+{
+    background-color: var(--colorCrema);
+    color: #5a1721;
+}
+
+.TextoIniciarOpc
+{
+    text-align: center;
+    margin-top: -5px;
+   
+}
+
+.bntOpcInicio{
+   justify-content: space-around;
+  display: flex;
+
+ }
+
+ .btnG{
+    margin-right: 4px;
+    background-color: #EB455F;
+ }
+
+ .btnFb
+ {
+    margin-left: 4px;
+    background-color: var(--azulFb);
+ }
+
+ .txtCreateOne{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--light);
+   
+ }
+
+ .txtCreateOne:hover
+ {
+    color: var(--RojoCake);
+ }
+
+ .LoginHumon
+ {
+    flex-direction: column;
+    justify-content: center;
+    background-color: #181823;
+    
+    
+ }
+
+ #LogoHumon
+ {
+
+ }
+
+.Img1
+{
+    background-image: url('Images/Img1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.Img2
+{
+    background-image: url('Images/Img2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.Img3
+{
+    background-image: url('Images/Sripad.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+#ContenedorCarrusel
+{
+    display:none;
+}
+
+
+.CarruselDentro h5
+{
+    display: inline-flex;
+    /* border: 5px solid rgb(250, 6, 6); */
+    color: var(--colorCrema);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+  
+}
+
+
+
+.CarruselDentro p
+{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.pie-pag .grupo-2
+{
+    margin-top: 40px;
+    background-color: rgb(25, 15, 26);
+    padding: 15px 10px;
+    text-align: center;
+   
+}
+
+.pie-pag .grupo-2 small
+{
+    font-size:  15px;
+}
+
+@media screen and(max-width:800px) {
+    .pie-pag .grupo-1
+    {
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+      padding: 35px 0px;
+    }
+  }
+
+  .warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #EB455F;
+    padding-top: 20px;
+  }

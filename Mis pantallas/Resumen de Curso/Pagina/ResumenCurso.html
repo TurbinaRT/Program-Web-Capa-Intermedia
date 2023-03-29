@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="Img/BORDE.png">
+    <link rel="stylesheet" href="ResumenCurso.css">
+    <link rel="stylesheet" href="MS.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7179a14424.js" crossorigin="anonymous"></script>
+    <title>Resumen del curso</title>
+</head>
+<body>
+
+  <header>
+    <nav style="background-color: #EB455F;" class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../../Img/HM_Logo.png" id="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorías
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Categoría 1</a></li>
+                    <li><a class="dropdown-item" href="#">Categoría 2</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Acerca de</a></li>
+                  </ul>
+                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../Ventas/Ventas.html">Ventas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cursos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../../Principal/Pantalla/PagInicio.html">Biblioteca de cursos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="../../Cursos/Cursos.html">Nuevo curso</a></li>
+                <li><a class="dropdown-item" href="../../Cursos/CursosEdit.html">Modificar curso</a></li>
+                <li><a class="dropdown-item" href="../../Cursos/CursosBaja.html">Eliminar curso</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="../../MisCursos/Pagina/MisCursos.html">Mis cursos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Contáctanos</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../../Img/no_pic.png" class="perfil">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../../MisCursos/Pagina/MisCursos.html">Mis cursos</a></li>
+                <li><a class="dropdown-item" href="../../Editar perfil/Pagina/EditarPerfil.html">Mi perfil</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+            <button class="btn btn-info" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+   
+        
+        <div id="MyContainerPage">
+            <h1 id="titulo">Nombre del curso</h1>
+            
+                        <div class="PrimerosDatos">
+                            <h4 id="titulo2" class="NombreProfesor">Nombre del profesor</h4>
+                        
+                            <div class="C-TitVid">
+                              <div class="C-NombreCurso">
+                                <h4 id="titulo2" class="Name-Curso">Nombre del curso</h4>
+                              </div>
+                            </div>
+
+                          </div>
+
+                        
+
+                        <div class="ContainerVideo" id="TheVid">
+
+                              
+                              
+                              <video id="videoCursoAct"  class="Video_Curso" src=""  controls >
+                              </video>
+                          
+
+                            <div id="comprarCurso" class="ContainerComprar">
+                                <h5>Empieza hoy</h5>
+                                <img class="Carrito" src="Carrito/Carrito.png" alt="Carrito">
+                                <input id="btnComprar" name="Enviar" type="submit" value="Comprar curso" method="get" action="../../Principal/Pantalla/PagInicio.html">
+
+                                <div class="Txt-UnderPrice">
+                                    <p>Categoría: </p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    
+                                </div>
+                            </div>
+
+                        
+                        </div> 
+
+                        
+
+                    <div class="C-DescriptionVid" id="IdDescVid">
+                        <h3 id="titulo3" class="Descripcion">Descripcion del curso</h3>
+                        <p id="verdaderaDescripcion" class="ContenidoDescripcion">Lorem ipsum dolor sit amet consectetur adipiscing elit, pellentesque
+                            maecenas netus facilisi
+                            ullamcorper
+                        </p>
+                        <p id="costoCantlvls"></p>
+                    </div>
+        
+                    <div class="C-TerceraParte">
+
+                        <div class="Container-Promedio">
+                            <!-- <p class="Datos">Promedio del curso:</p> -->
+                            <!-- <p id="progresoCur" class="Datos">progreso del curso:</p> -->
+                        </div>
+    
+                        <div id="califCurso" class="Estrellitas"> 
+                            <p class="TxtCalificar">Calificar curso</p>
+                            <img class="C-Estrellitas" src="Carrito/Elemental/5stars.png" alt="Estrellitas">
+                    
+        
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+
+
+                <div class="ContainerComentario">
+
+                    <div class="form-group">
+                        <label class="comentario">Escribe un comentario</label>
+                        <textarea class="form-control" name="commentary" id="commentary" rows="2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div id="btnComentario">
+                            <input id="btn" name="Enviar" type="submit" value="Comentar" disabled>
+                        </div>
+    
+                    </div>
+
+                </div>
+                
+
+
+
+        </div>
+
+
+        <footer class="pie-pag">
+
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <!--Aquí iría nuestro logotipo-->
+                        <a href="">
+                            <img class="HumonP" src="Img/ColorWLetras.png" alt="JellyCode Logo">
+                        </a>
+                    </figure>
+                </div>
+    
+                <div class="box">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>Somos una plataforma en línea que se dedica a proporcionar cursos de alta calidad y 
+                        enriquecedores a cualquier persona que busque aprender nuevas habilidades y conocimientos.
+                        Nos enorgullece ofrecer una amplia gama de cursos en línea, desde cursos de programación y
+                        diseño hasta cursos de idiomas y desarrollo personal.
+                    </p>
+    
+                </div>
+    
+                
+                <div class="box" id="iconosRedes">
+                    <h2>SÍGUENOS</h2>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                    
+                </div>
+                
+                        
+            </div> <!--Cierre grupo 1-->
+    
+            <div class="grupo-2">
+                <small>&copy; 2023 <b>Humon</b> - Todos los derechos reservados -</small>
+    
+            </div>
+        </footer>
+    
+</body>
+</html>

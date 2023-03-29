@@ -1,0 +1,147 @@
+
+:root{
+    --azulOscuro: #2B3467;
+    --dark-x: #1e2126;
+    --light: #ffffff;
+    --azulClarito: #BAD7E9;
+    --colorCrema: #FCFFE7;
+    --RojoCake: #EB455F;
+    --azulFb: #293462;
+    --azul1: #537FE7;
+    --AzulJelly: #2F73AE;
+
+}
+
+
+
+@media screen and (max-width:1362px) 
+{
+    body{
+        width: auto;
+    }
+}
+
+@media screen and (max-width:800px) 
+{
+    .pie-pag .grupo-1 
+    {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pie-pag .grupo-1 .box
+    {
+        display: flex;
+       align-items: center;
+    }
+
+
+    .ContainerVideo  /*Conteendor del video con el aside*/
+{
+    display: flex;
+   height: auto;
+    flex-direction: column;
+}
+
+.ContainerVideo video
+{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    width:auto;
+}
+
+
+.ContainerVideo .ContainerComprar
+{
+    display: flex;
+    width:auto;
+
+}
+
+.ContainerComprar 
+{
+    display: flex;
+    flex-direction: column;
+height: 50%;
+justify-content: center;
+}
+
+.ContainerComprar .Carrito 
+{
+    display:none;
+    /* display: flex;
+    width: 30px; */
+
+}
+
+.ContainerComprar input 
+{
+    padding: -10px;
+}
+
+.Txt-UnderPrice /*El contenedor del txt debajo del boton COMPRAR*/
+{
+    background-color: var(--RojoCake);
+    border-radius: 5px;
+    height: 60px;
+    
+}
+
+
+.Txt-UnderPrice
+{
+    display: flex;
+}
+
+
+.C-DescriptionVid
+{
+    
+    width: 90%;
+    margin-left: 5%;
+}
+
+#califCurso .C-Estrellitas
+{
+
+  
+    width: 45%;
+
+}
+
+/********************************/
+
+.ContainerComentario
+{
+    display:inline-box;
+    margin: 45px;
+}
+
+#commentary {
+    margin-left: 5%;
+    margin-right: 10%;
+    width: 100%;
+    font-size: 80%;
+    background-color: var(--azulClarito);
+
+    
+}
+
+.ContainerComentario input
+{
+    margin: 10px;
+    border-radius: 5px;
+    color: var();
+}
+
+.ContainerComentario input:hover
+{
+    border: 2px solid black;
+}
+
+}

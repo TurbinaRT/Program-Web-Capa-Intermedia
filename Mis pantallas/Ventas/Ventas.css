@@ -1,0 +1,90 @@
+.container > .cursos{
+    display: flexbox; 
+    text-align: center;
+    font-size: 24px;
+}
+
+.usuario{
+    margin: 2%;
+}
+
+.cursos{
+    margin: 2%;
+    background-color: #2b3467d1;
+    color: #FCFFE7;
+}
+
+.alumnos{
+    padding: 20px;
+    background-color: #2b3467d1;
+    margin-bottom: 5%;
+    font-size: 22px;
+}
+
+.alumnos > label{
+  display: flex;
+  justify-content:first baseline;
+  color: #FCFFE7;
+  font-size: 22px;
+}
+
+.formaPago{
+    background-color: #14a93cc7;
+    margin-bottom: 3%;
+    border: #2B3467 solid 2px;
+}
+
+.formaPago > label{
+    display: flex;
+    justify-content:first baseline;
+    color: #FCFFE7;
+    font-size: 22px;
+}
+
+.formaPago > h3{
+    margin: auto;
+    padding: 20px;
+    border: #4153b3 solid 2px;
+    text-align: center;
+    color: #FCFFE7;
+    background-color: #bae9cb;
+}
+
+.infoAlumnos{
+    background-color: #2b3467db;
+    color: #FCFFE7;
+    text-align: center;
+    border: solid #FCFFE7 2px;
+    padding: 15px;
+}
+
+.infoAlumnos > label{
+    display: inline-flex;
+    padding-right: 135px;
+}
+
+.infoAlumnos > h2{
+    margin: 2%;
+}
+
+.caja{
+    margin: 4%;
+}
+
+.cursoName{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin: 2%;
+    background-color: #bad7e9;
+    color: #EB455F;
+}
+
+.totalAlumno > h3{
+    color: #FCFFE7;
+    text-align: right;
+    background-color: #2B3467;
+}
+
+.container > .usuario > .dropdown{
+    margin: 1%;
+}

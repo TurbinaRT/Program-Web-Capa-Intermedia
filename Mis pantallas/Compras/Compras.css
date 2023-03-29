@@ -1,0 +1,54 @@
+.compra{
+    padding: 0px;
+    width: 100%;
+    background-image: url("../Img/pattern.jpg");
+    text-align: center;
+    display: flexbox;
+    justify-content: center;
+    border-style: ridge;
+}
+
+.compra > h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 15px;
+    margin-top: 15px;
+    color: black;
+}
+
+.container{
+    margin: 10%;
+    border: 5px solid;
+    border-style: double;
+    padding: 70px;
+    background-color: #bad7e9dd;
+}
+.container > .dropdown{
+    margin-bottom: 10px;
+}
+
+.container > .datos{
+    background-color: #bad7e9;
+    font-size: 20px;
+    border-color: #2B3467;
+}
+
+.container > .datos > label{
+    margin-left: 10px;
+}
+
+.linea {
+    border: 2px solid rgba(38, 38, 38, 0.784);
+  }
+
+  .boton{
+    display: flexbox;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+  }
+
+  .datos{
+    margin: auto;
+    display: flex;
+    text-align: center;
+  }
