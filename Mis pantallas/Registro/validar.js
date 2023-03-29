@@ -1,7 +1,7 @@
 function validar() {
 var nombre, apellidoP, apellidoM, correo, pass, sexo, alumno, instructor, fechaNac;
-nombre = deocument.getElementById("nombre-h").value;
-apellidoP = deocument.getElementById("Ap-pat-h").value;
+nombre = deocument.getElementById('nombre-h').value;
+apellidoP = deocument.getElementById('Ap-pat-h').value;
 apellidoM = deocument.getElementById("Ap-mat-h").value;
 correo = deocument.getElementById("email-h").value;
 pass = deocument.getElementById("password-h").value;
