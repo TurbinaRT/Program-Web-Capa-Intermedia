@@ -6,6 +6,8 @@
     --colorCrema: #FCFFE7;
     --RojoCake: #EB455F;
     --azulFb: #293462;
+    --azul1: #537FE7;
+    --AzulJelly: #2F73AE;
 }
 
 *{
@@ -15,7 +17,7 @@
 }
 .bg-dark
 {
-    background-color: var(--azulOscuro) !important;
+    background-color: black !important;
 }
 
 body{
@@ -35,7 +37,6 @@ body{
 .datosCuenta
 {
     offset-block-start:initial;
-   
 }
 
 .form-control
@@ -53,13 +54,13 @@ body{
 }
 
 .ForgotPass:hover{
-    color: var(--RojoCake);
-    
+    color: var(--azulClarito);
+    font-size: 15px;   
 }
 
 .btnInicio{
     color:var(--colorCrema);
-    background-color: var(--RojoCake);
+    background-color: var(--dark-x);
  border: 0;
  
 }
@@ -108,15 +109,21 @@ body{
 
  .LoginHumon
  {
+    display: flex;
+    padding: 0;
+    margin: 0;
     flex-direction: column;
     justify-content: center;
-    background-color: #181823;
-    
-    
- }
+    background-color: var(--azulFb);
+}
 
- #LogoHumon
+#LogoHumon
  {
+    margin-bottom: -20px;
+   
+    display: flex;
+    justify-content:space-around;
+    align-items: baseline;
 
  }
 
@@ -136,11 +143,10 @@ body{
 
 .Img3
 {
-    background-image: url('Images/Sripad.png');
-    background-size: cover;
+    background-image: url('Images/Img3.jpg');
+    background-size:cover;
     background-position: center;
 }
-
 
 #ContenedorCarrusel
 {
@@ -154,8 +160,6 @@ body{
     /* border: 5px solid rgb(250, 6, 6); */
     color: var(--colorCrema);
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px;
-    border-radius: 5px;
   
 }
 
@@ -167,7 +171,7 @@ body{
     display: flex;
     justify-content: center;
     font-weight: 500;
-   background-color: rgba(255, 255, 255, 0.5);
+   background-color: rgba(83, 127, 231, .5);
 }
 
 .pie-pag .grupo-2
