@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
-    <script src="validar.js"></script>
-	
+    <script src="./validar.js" defer></script>
+
+
 </head>
 <body>
 
 	<div class="Formulario">
-        <form method="post" enctype="multipart/form-data" onsubmit="return validar();">
+        <form method="post" id="form" enctype="multipart/form-data">
     
                 <div class="Primero">
                     <h1>Regístrate</h1>
@@ -26,33 +27,33 @@
             
 
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre-h" name="nombre" placeholder="Ingresa tu nombre" required>
+            <input type="text" id="Nombre_h" name="nombreN" placeholder="Ingresa tu nombre" >
     
             <label for="apellidos" id="txt-Ap">Apellidos:</label>
             
             <div class="LN-H">
                 
-                <input type="text" id="Ap-pat-h" name="apellidoP" placeholder="Paterno" required>
+                <input type="text" id="Ap-pat-h" name="apellidoP" placeholder="Paterno" >
         
-                <input type="text" id="Ap-mat-h" name="apellidoM" placeholder="Materno (opcional)" required>
+                <input type="text" id="Ap-mat-h" name="apellidoM" placeholder="Materno (opcional)" >
 
             </div>
 
             <div class="ContainerN-N">
                 
                 <label for="nombre">Nombre de usuario:</label>
-                <input type="text" id="Inserta tu nombre de usuario" name="username" placeholder="Username" required>
+                <input type="text" id="username_h" name="username" placeholder="Username" >
         
 
             </div>
 
             <label for="foto">Fecha de Nacimiento</label>
-            <input type="date" id="foto-h" name="foto" accept="image/*" required>
+            <input type="date" id="Fecha_Na" name="Fecha_Na" >
     
     
             <label for="genero">Género:</label>
             
-            <select id="genero-h" name="genero" required>
+            <select id="genero-h" name="genero" >
                 <option value="">Selecciona una opción</option>
                 <option value="femenino">Femenino</option>
                 <option value="masculino">Masculino</option>
@@ -62,13 +63,13 @@
            
 
             <label for="foto">Imagen de perfil</label>
-            <input type="file" id="foto-h" name="foto" accept="image/*" required>
+            <input type="file" id="foto-h" name="foto" accept="image/*" >
     
             <label for="email">Email:</label>
-            <input type="email" id="email-h" name="email" placeholder="Ingresa tu email" required>
+            <input type="email" id="email-h" name="email" placeholder="Ingresa tu email" >
     
             <label for="contraseña">Contraseña:</label>
-            <input type="password" id="password-h" name="contraseña" placeholder="Ingresa tu contraseña" required>
+            <input type="password" id="password-h" name="contraseña" placeholder="Ingresa tu contraseña" >
     
 
             <div class="radio">
@@ -90,7 +91,7 @@
 
 
             <div class="container-button">
-                <button type="submit" class="Btn-Create">Crear cuenta</button>
+                <button type="submit" class="Btn-Create" onclick='return validar()'>Crear cuenta</button>
             </div>
             
 
@@ -101,6 +102,8 @@
             </div>
 
         </form>
+
+        <div id="error"></div>
 
         <footer class="pie-pag">
             
@@ -115,6 +118,6 @@
 
 
     </div>
-
+    
 </body>
 </html>
