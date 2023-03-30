@@ -1,0 +1,25 @@
+public class Perfil {
+    private String nombre;
+    private String correoElectronico;
+    private LocalDate fechaNacimiento;
+    private String llave;
+
+    public Perfil(String nombre, String correoElectronico, LocalDate fechaNacimiento, String llave) {
+        this.nombre = nombre;
+        this.correoElectronico = correoElectronico;
+        this.fechaNacimiento = fechaNacimiento;
+        this.llave = llave;
+    }
+
+    public void actualizarInformacion(String nombre, String correoElectronico, LocalDate fechaNacimiento, String nuevaLlave) {
+        // Primero, verificamos que la llave proporcionada sea correcta antes de permitir que el usuario actualice su información
+        if (nuevaLlave.equals(llave)) {
+            this.nombre = nombre;
+            this.correoElectronico = correoElectronico;
+            this.fechaNacimiento = fechaNacimiento;
+            this.llave = nuevaLlave;
+        } else {
+            System.out.println("La llave proporcionada es incorrecta. No se puede actualizar la información del perfil.");
+        }
+    }
+}

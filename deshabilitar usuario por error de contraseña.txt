@@ -1,0 +1,75 @@
+import java.util.Scanner;
+
+public class Login {
+    private static final int MAX_ATTEMPTS = 3;
+    private static final String ADMIN_USERNAME = "admin";
+    private static final String ADMIN_PASSWORD = "admin123";
+
+    private static int attempts = 0;
+    private static boolean userDisabled = false;
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        while (!userDisabled) {
+            System.out.print("Ingrese su nombre de usuario: ");
+            String username = scanner.nextLine();
+
+            if (!userDisabled && verifyUsername(username)) {
+                System.out.print("Ingrese su contraseña: ");
+                String password = scanner.nextLine();
+
+                if (verifyPassword(password)) {
+                    System.out.println("Inicio de sesión exitoso.");
+                    attempts = 0;
+                } else {
+                    attempts++;
+                    if (attempts >= MAX_ATTEMPTS) {
+                        System.out.println("Ha ingresado una contraseña incorrecta tres veces. Su cuenta ha sido deshabilitada.");
+                        userDisabled = true;
+                    } else {
+                        System.out.println("Contraseña incorrecta. Intento " + attempts + " de " + MAX_ATTEMPTS + ".");
+                    }
+                }
+            } else {
+                System.out.println("Nombre de usuario no válido.");
+            }
+        }
+
+        System.out.println("Para activar su cuenta, inicie sesión como usuario administrador.");
+
+        while (true) {
+            System.out.print("Ingrese el nombre de usuario administrador: ");
+            String adminUsername = scanner.nextLine();
+
+            if (adminUsername.equals(ADMIN_USERNAME)) {
+                System.out.print("Ingrese la contraseña de usuario administrador: ");
+                String adminPassword = scanner.nextLine();
+
+                if (adminPassword.equals(ADMIN_PASSWORD)) {
+                    System.out.println("Inicio de sesión de administrador exitoso.");
+                    System.out.println("La cuenta del usuario ha sido activada.");
+                    break;
+                } else {
+                    System.out.println("Contraseña de administrador incorrecta.");
+                }
+            } else {
+                System.out.println("Nombre de usuario de administrador incorrecto.");
+            }
+        }
+
+        scanner.close();
+    }
+
+    private static boolean verifyUsername(String username) {
+        // Aquí iría la lógica para verificar si el nombre de usuario existe en la base de datos, por ejemplo.
+        // En este ejemplo, se considera válido cualquier nombre de usuario.
+        return true;
+    }
+
+    private static boolean verifyPassword(String password) {
+        // Aquí iría la lógica para verificar si la contraseña es correcta.
+        // En este ejemplo, se considera correcta la contraseña "1234".
+        return password.equals("1234");
+    }
+}
