@@ -1,3 +1,7 @@
+function validaciones(){
+    validar();
+    ChecarPass();
+}
 
     var nombre = document.getElementById("Nombre_h");
     var apellidoP = document.getElementById("Ap-pat-h");
@@ -57,8 +61,8 @@
         }
         
         //Condiciones de longitud de caracteres
-        else if(nombre.value.length < 5) {
-            alert ("El campo nombre debe ser mayor o igual a 5 caracteres");
+        else if(nombre.value.length > 35 ) {
+            alert ("El campo nombre debe ser menor o igual a 35 caracteres");
             
         }
         else if(apellidoP.value.length > 50) {
@@ -73,11 +77,33 @@
             alert ("El campo correo electrónico debe ser menor o igual a 70 caracteres");
             
         }
-        else if(pass.value.length > 30) {
-            alert ("El campo contraseña debe ser menor o igual a 30 caracteres");
-        } else if (pass.value.length <3)
-        alert ("La contraseña es demasiado pequeña");
+        else if(pass.value.length > 20) {
+            alert ("El campo contraseña debe ser menor o igual a 20 caracteres");
+        } else if (pass.value.length <7)
+        alert ("La contraseña es demasiado pequeña, mínimo 8 caracteres");
+
+
+        function ChecarPass()
+    {
+        let validPassword = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0,9])(?=.*[!@#\$%\^&\*])(?=-{8,})/;
+        let passwordCheck = document.querySelector('#password-h').value;
+    }
 
         return false;
 
+    }
+
+    //Expresión regular para validar una contraseña en javascript. 
+    //La contraseña debe tener una letra mayúscula, una letra minúscula, un número y un caracter especial.
+    function ChecarPass()
+    {
+        let validPassword = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0,9])(?=.*[!@#\$%\^&\*])(?=-{8,})/;
+        let passwordCheck = document.querySelector('#password-h').value;
+        
+        if (validPassword.test(passwordCheck))
+        {
+                alert("Le sabes");
+        } else 
+        alert("No le sobas");
+        //alert("La contraseña debe tener una letra mayúscula, una letra minúscula, un número y un caracter especial.");
     }

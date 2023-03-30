@@ -69,7 +69,7 @@
             <input type="email" id="email-h" name="email" placeholder="Ingresa tu email" >
     
             <label for="contraseña">Contraseña:</label>
-            <input type="password" id="password-h" name="contraseña" placeholder="Ingresa tu contraseña" >
+            <input type="password" id="password-h" name="contraseña" placeholder="Ingresa tu contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%,.;:*?&amp;])[A-Za-z\d@$!%,.;:*?&amp;]{8,}$" >
     
 
             <div class="radio">
@@ -91,7 +91,7 @@
 
 
             <div class="container-button">
-                <button type="submit" class="Btn-Create" onclick='return validar()'>Crear cuenta</button>
+                <button type="submit" class="Btn-Create" onclick='validaciones()'>Crear cuenta</button>
             </div>
             
 
