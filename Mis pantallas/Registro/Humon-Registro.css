@@ -21,7 +21,7 @@ body
     font-size: 20px;
     color: var(--colorCrema);
     background-color: var(--azulOscuro);
-	background-image: url(Fondo/Fondo2.png);
+	background-image: url(Fondo/fondoJC.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -30,7 +30,7 @@ form {
 	max-width: 500px;
 	margin: 0 auto;
 	padding: 20px;
-	background-color: var(--RojoCake);
+	background-color: var(--azulFb);
 	border-radius: 5px;
 	display: inline-flexbox;
 
@@ -144,7 +144,7 @@ input:hover
 
 .Btn-Create 
 {
-	background-color: var(--azulOscuro);
+	background-color: var(--RojoCake);
 	width: 100%;
 	color: white;
 	padding: 14px 20px;
@@ -172,6 +172,7 @@ input:hover
 .YaTengoCuenta a{
     text-decoration: none;
     font-weight: 800;
+    color: var(--RojoCake);
 }
 
 .YaTengoCuenta a:hover{
