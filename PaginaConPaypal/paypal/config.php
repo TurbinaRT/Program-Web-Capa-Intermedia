@@ -1,0 +1,14 @@
+<?php
+define('ProPayPal',0);
+if(ProPayPal){
+    define("PayPalClientId","AT0cjjYOoCRopAeAycrehncDoK0PEe2TLjf9zFsv_lseVjNSjOrPHnpgm0kKgZ46K9UpwAv2N547cJcn");
+    define("PayPalSecret","EFfPIcvCDOE6PSFllQ12O4mogFIlkvne96go9uNJK1O5RdqAfnWceHJ7FCfWiQQOWf26k3j6N_Qq0E9S");
+    define("PayPalBaseUrl","https://api.paypal.com/v1/");
+    define("PayPalENV","production");
+}else{
+    define("PayPalClientId","AT0cjjYOoCRopAeAycrehncDoK0PEe2TLjf9zFsv_lseVjNSjOrPHnpgm0kKgZ46K9UpwAv2N547cJcn");
+    define("PayPalSecret","EFfPIcvCDOE6PSFllQ12O4mogFIlkvne96go9uNJK1O5RdqAfnWceHJ7FCfWiQQOWf26k3j6N_Qq0E9S");
+    define("PayPalBaseUrl","https://api.sandbox.paypal.com/v1/");
+    define("PayPalENV","sandbox");
+}
+?>
